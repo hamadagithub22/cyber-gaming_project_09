@@ -21,6 +21,7 @@ header{
     position: absolute;
     top: 40px;
     width: 100%;
+   
     
 }
 header nav .logo{
@@ -144,6 +145,9 @@ p{
     justify-content: center;
     align-items: center;
     transition: opacity 0.5s;
+    z-index: 1;
+    
+
 
 }
 
@@ -158,6 +162,7 @@ p{
     animation-name: spin;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    color: rgb(44, 43, 43);
 }
 
 @keyframes spin {
@@ -175,6 +180,11 @@ p{
     background-image: url(../image/download.png);
     padding-top: 70px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+    
    
    
  
@@ -376,6 +386,8 @@ p{
  background-image: url(../image/download.png);
  background-size: cover;
  height: 100vh;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
 
 }
 
@@ -478,6 +490,7 @@ p{
 
 footer {
     color: rgb(245, 244, 241);
+    
 
  
     
@@ -486,9 +499,12 @@ footer h1{
     color: rgb(248, 249, 250);
     padding-bottom: 10px;
     font-size: 20px;
+    text-align: center;
 }
 footer p{
     font-size: 18px;
+    padding: 20px;
+    
 }
 footer .container{
    background-image: url(../image/download.png);
@@ -496,15 +512,21 @@ footer .container{
     padding-top: 160px;
     height: 80vh;
     height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
  
   
 
 
 }
 footer .container .row{
-    margin: auto;
- 
+    /* background-color: red; */
+    text-align: left;
+
+    
 }
+
 
 footer .reserved{
     color: rgb(238, 196, 196);
@@ -517,6 +539,7 @@ footer .fot2 a{
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
+    
 }
 
 
@@ -732,13 +755,14 @@ img {
 
 
 /*------------------ << media quires >>---------------------*/
-@media (max-width: 1300px){
+@media (max-width: 1350px){
     header nav{
         width: 100%;
     }
-    .container{
-        width: 90%;
-    }
+}
+@media (max-width: 1300px){
+    
+   
     .section1 .container{
         width: 100%;
         padding: 40px;
@@ -763,7 +787,7 @@ img {
     }
    
 }
-@media (max-width: 1159px){
+@media (max-width: 1220px){
     nav .bars{
         display: block;
         
@@ -778,10 +802,14 @@ img {
         
         
     }
+}
+@media (max-width: 1159px){
+   
     footer .container{
-        
          height: 80vh;
+         
      }
+   
 }
 
 
@@ -955,11 +983,10 @@ img {
     justify-content: center;
     flex-wrap: wrap;
    }
-   .container{
-    height: 130vh;
-   }
+  
    footer .container{
-    height: 100vh;
+    height: 117vh;
+   
    }
   
 
@@ -980,6 +1007,7 @@ img {
         justify-content: center;
         width: 100%;
         margin: auto;
+ 
            
     }
    
@@ -1022,9 +1050,9 @@ img {
    
    
     footer .container .row{
-        width: 100%;
-        width: calc(100% / 2);
+        width: 90%;
         margin: auto;
+       
 
        
    
